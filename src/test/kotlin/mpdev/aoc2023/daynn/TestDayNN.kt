@@ -1,5 +1,6 @@
 package mpdev.aoc2023.daynn
 
+import mpdev.aoc2023.common.testMode
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.*
 import java.io.File
@@ -17,6 +18,7 @@ class TestDayNN {
 
     @BeforeEach
     fun testSetup() {
+        testMode = true
         val inputLines = File(filename).readLines()
         testPuzzle = inputProcessor.process(inputLines)
     }

@@ -2,12 +2,11 @@ package mpdev.aoc2023.common
 
 import mpdev.aoc2023.utils.annimation.AnimationObject
 import java.util.Calendar
-import kotlin.system.exitProcess
 
 object Constants {
     const val AOC = "AoC 2023"
     const val AUTHOR = "Marinos Pappas"
-    const val USAGE = "usage: Main -part1|-part2 -dayN"
+    const val USAGE = "usage: Main -part1|-part2 -dayN -a"
 }
 
 var testMode = false

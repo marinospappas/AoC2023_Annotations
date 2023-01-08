@@ -1,5 +1,6 @@
 package mpdev.aoc2023.day24
 
+import mpdev.aoc2023.common.testMode
 import mpdev.aoc2023.day24.Day24.Companion.grid
 import mpdev.aoc2023.day24.Day24.Companion.overlayGrid
 import org.junit.jupiter.api.*
@@ -19,6 +20,7 @@ class TestDay24 {
 
     @BeforeEach
     fun testSetup() {
+        testMode = true
         val inputLines = File(filename).readLines()
         testPuzzle = inputProcessor.process(inputLines)
     }
