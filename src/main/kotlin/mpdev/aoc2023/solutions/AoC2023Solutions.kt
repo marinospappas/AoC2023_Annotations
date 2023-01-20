@@ -10,4 +10,9 @@ class AoC2023Solutions {
     fun day1(day: Day1) {
         println(day.msg)
     }
+
+    @AoCDay(day = 2)
+    fun day2(day: Day2) {
+        println(day.msg)
+    }
 }

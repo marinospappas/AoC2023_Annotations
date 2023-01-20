@@ -10,4 +10,9 @@ class AoC2023Inputs {
     fun day1(input: List<String>): Day1 {
         return Day1()
     }
+
+    @AoCDay(day = 2)
+    fun day2(input: List<String>): Day2 {
+        return Day2()
+    }
 }
