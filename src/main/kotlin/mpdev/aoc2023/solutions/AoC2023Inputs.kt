@@ -8,7 +8,15 @@ class AoC2023Inputs {
 
     @AoCDay(day = 1)
     fun day1(input: List<String>): Day1 {
-        return Day1()
+        val puzzle = Day1()
+        var elfId = 0
+        input.forEach {
+            if (it.isNotEmpty())
+                puzzle.dataList.add(Day1.Elf(elfId, it.toInt()))
+            else
+                ++elfId
+        }
+        return puzzle
     }
 
     @AoCDay(day = 2)
