@@ -1,8 +1,8 @@
 package mpdev.aoc2023.day24
 
 import mpdev.aoc2023.common.testMode
-import mpdev.aoc2023.day24.Day24.Companion.grid
-import mpdev.aoc2023.day24.Day24.Companion.overlayGrid
+import mpdev.aoc2023.day24.Day24_.Companion.grid
+import mpdev.aoc2023.day24.Day24_.Companion.overlayGrid
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.*
 import java.io.File
@@ -11,12 +11,12 @@ import java.io.File
 @Nested
 @DisplayName("Day 24 Test")
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
-class TestDay24 {
+class TestDay24_ {
 
     private val filename = "src/test/resources/day24/input.txt"
     private val inputProcessor = InputProcessorDay24()
     private val solution = SolutionProcessorDay24()
-    private lateinit var testPuzzle: Day24
+    private lateinit var testPuzzle: Day24_
 
     @BeforeEach
     fun testSetup() {

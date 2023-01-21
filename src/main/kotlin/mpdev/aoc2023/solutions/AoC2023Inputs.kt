@@ -7,20 +7,18 @@ import mpdev.aoc2023.aoc.AoCInput
 class AoC2023Inputs {
 
     @AoCDay(day = 1)
-    fun day1(input: List<String>): Day1 {
-        val puzzle = Day1()
+    fun day1(input: List<String>): Day01 {
+        val puzzle = Day01()
         var elfId = 0
         input.forEach {
             if (it.isNotEmpty())
-                puzzle.dataList.add(Day1.Elf(elfId, it.toInt()))
+                puzzle.dataList.add(Day01.Elf(elfId, it.toInt()))
             else
                 ++elfId
         }
         return puzzle
     }
 
-    @AoCDay(day = 2)
-    fun day2(input: List<String>): Day2 {
-        return Day2()
-    }
+    @AoCDay(day = 24)
+    fun day23(input: List<String>) = Day24(input)
 }

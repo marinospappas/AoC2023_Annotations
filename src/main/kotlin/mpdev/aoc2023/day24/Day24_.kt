@@ -7,7 +7,7 @@ import java.awt.Point
 import java.lang.StringBuilder
 import java.util.*
 
-class Day24(var inputList: List<String>) {
+class Day24_(var inputList: List<String>) {
 
     companion object {
         lateinit var grid: Array<CharArray>

@@ -7,14 +7,15 @@ import mpdev.aoc2023.aoc.AoCSolution
 class AoC2023Solutions {
 
     @AoCDay(day = 1)
-    fun day1(puzzle: Day1) {
+    fun day1(puzzle: Day01) {
         println(puzzle.msg)
-        println("Part 1: ${puzzle.part1()} (${puzzle.part1Elapsed} msec)")
-        println("Part 2: ${puzzle.part2()} (${puzzle.part2Elapsed} msec)")
+        println("Part 1: ${puzzle.part1()} (${puzzle.elapsed1} msec)")
+        println("Part 2: ${puzzle.part2()} (${puzzle.elapsed2} msec)")
     }
 
-    @AoCDay(day = 2)
-    fun day2(puzzle: Day2) {
-        println(puzzle.msg)
+    @AoCDay(day = 24)
+    fun day24(puzzle: Day24) {
+        println("Part 1: ${puzzle.part1()} (${puzzle.elapsed1} msec)")
+        println("Part 2: ${puzzle.part2()} (${puzzle.elapsed2} msec)")
     }
 }
