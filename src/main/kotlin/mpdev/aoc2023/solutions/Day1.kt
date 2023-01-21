@@ -9,11 +9,9 @@ class Day1 {
     var dataList: MutableList<Elf> = mutableListOf()
     data class Elf(var id: Int, var calories: Int = 0)
 
-    fun getCaloriesList() =
-        dataList.groupingBy { it.id }.aggregate {
-                _, accumulator: Int?, element, first ->
-            if (first) element.calories else accumulator?.plus(element.calories)
-        }.values.toMutableList().sortedBy { it }
+    private fun getCaloriesList() = dataList.groupingBy { it.id }.aggregate { _, accumulator: Int?, element, first ->
+        if (first) element.calories else accumulator?.plus(element.calories)
+    }.values.toMutableList().sortedBy { it }
 
     /** part 1 calculation */
     fun part1(): String {
