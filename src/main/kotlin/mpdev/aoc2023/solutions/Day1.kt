@@ -16,9 +16,7 @@ class Day1 {
     /** part 1 calculation */
     fun part1(): String {
         val result: String
-        part1Elapsed = measureTimeMillis {
-            result = getCaloriesList().last()!!.toString()
-        }
+        part1Elapsed = measureTimeMillis { result = getCaloriesList().last()!!.toString() }
         return result
     }
 
@@ -28,8 +26,8 @@ class Day1 {
         part2Elapsed = measureTimeMillis {
             val caloriesList = getCaloriesList()
             val lastIndex = caloriesList.lastIndex
-            result = (caloriesList[lastIndex]?.plus(caloriesList[lastIndex - 1]!!)
-                ?.plus(caloriesList[lastIndex - 2]!!) ?: 0).toString()
+            result = (caloriesList[lastIndex]?.plus(caloriesList[lastIndex - 1]!!)?.plus(caloriesList[lastIndex - 2]!!) ?: 0)
+                .toString()
         }
         return result
     }
